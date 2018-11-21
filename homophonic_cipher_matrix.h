@@ -24,7 +24,7 @@ class homophonic_cipher_matrix: protected text_matrix {
     /* Variable: letter_count
      * Description: number of total distinct symbols in ciphertext
      */
-    int letter_count;
+    unsigned letter_count;
 
     /* Variable: matrix
      * Description: Contains the digram frequencies of cipher text
