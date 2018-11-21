@@ -136,7 +136,7 @@ void text_matrix::compute_freq_distribution(int letter_count, int freq_distribut
 }
 
 void text_matrix::update(char text_buffer[]) {
-    int i = 0;
+    unsigned i = 0;
     int index = -1;
     int prev = -1;
 

@@ -150,8 +150,7 @@ void homophonic_cipher_matrix::display_key(int key[]) {
 }
 
 void homophonic_cipher_matrix::update(char text_buffer[], int distinct[256]) {
-    int i = 0;
-    int j = 0;
+    unsigned i = 0, j = 0;
     int prev = -1;
 
     text_len = strlen(text_buffer);
@@ -537,7 +536,7 @@ void homophonic_cipher_matrix::create_initial_key(const text_matrix &e_matrix, i
 void homophonic_cipher_matrix::print_text_using_current_key(char text_buffer[]) {
     size_t length = strlen(text_buffer);
 
-    for (int i = 0; i < length; i++) {
+    for (unsigned i = 0; i < length; i++) {
         int letter_index = static_cast<int>(text_buffer[i]);
         int index = letter_mapping[letter_index];
         char ch = 'a' + putative_key[index];
@@ -744,7 +743,7 @@ int homophonic_cipher_matrix::inner_hill_climb(const text_matrix &e_matrix, int 
 }
 
 void homophonic_cipher_matrix::copy_key_from_file(char *file_name) {
-    int i, j;
+    unsigned i, j;
     char ch;
     char *buffer = NULL;
 

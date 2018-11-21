@@ -63,6 +63,7 @@ int main(int argc, char *argv[]) {
 
     printf("\n");
 
+    buffer_e = nullptr;
     delete [] buffer_e;
     delete [] buffer_d;
 

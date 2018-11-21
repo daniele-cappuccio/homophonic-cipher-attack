@@ -16,7 +16,7 @@
 #include <cstring>
 
 int get_distinct_symbols(char *buffer, int distinct[256]) {
-    int i;
+    unsigned i;
     int count = 0;
 
     size_t buff_size = strlen(buffer);
